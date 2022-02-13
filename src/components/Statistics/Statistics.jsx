@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "../Data/Statistics.module.css";
 
 export default function Statistics({ good, neutral, bad, total, positivePercentage }) {
@@ -11,3 +12,15 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
         </ul>
     )
 };
+
+Statistics.propTypes = {
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            good: PropTypes.number.isRequired,
+            neutral: PropTypes.number.isRequired,
+            bad: PropTypes.number.isRequired,
+            total: PropTypes.number.isRequired,
+            positivePercentage: PropTypes.number.isRequired,
+        }).isRequired,
+    ).isRequired,
+}
