@@ -5,7 +5,6 @@ import Notification from "../Notification/Notification";
 import Section from "../Section/Section";
 
 import styles from "../Data/Feedback.module.css";
-import PropTypes from "prop-types";
 
 
 class Feedback extends React.Component {
