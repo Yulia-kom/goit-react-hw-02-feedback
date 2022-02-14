@@ -1,5 +1,5 @@
-import Container from "./Container/Container";
-import Feedback from "./Feedback/Feedback"
+import Container from "../components/Container";
+import Feedback from "../components/Feedback";
 
 export default function App () {
   return (

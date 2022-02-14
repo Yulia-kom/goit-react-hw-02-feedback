@@ -14,13 +14,10 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
 };
 
 Statistics.propTypes = {
-    stats: PropTypes.arrayOf(
-        PropTypes.shape({
-            good: PropTypes.number.isRequired,
-            neutral: PropTypes.number.isRequired,
-            bad: PropTypes.number.isRequired,
-            total: PropTypes.number.isRequired,
-            positivePercentage: PropTypes.number.isRequired,
-        }).isRequired,
-    ).isRequired,
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired,
+        
 }
