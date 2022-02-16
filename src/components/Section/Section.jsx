@@ -10,6 +10,10 @@ export default function Section ({title, children}) {
 }
 
 
-Section.propTypes = {
-    title: PropTypes.string.isRequired,
-}
+Section.propType = {
+  title: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
